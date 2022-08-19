@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import AddBook from '../AddBook';
 import BookList from '../BookList';
-import './Book.css'
+import './Book.css';
 
 const Book = (props) => {
   const { bookItem } = props;
