@@ -1,15 +1,14 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
 .menuBook {
-    display: block;
-    background-color: white;
-    width: 76%; 
+  display: block;
+  background-color: white;
+  width: 76%;
 }
 
 ul.items {
-    margin-left: 6rem;
-    padding-left: 6rem;
+  margin-left: 6rem;
+  padding-left: 6rem;
 }
-
