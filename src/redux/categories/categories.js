@@ -1,5 +1,5 @@
 // action type
-const checkStatus = 'check_Status';
+const CHECK_STATUS = 'bookstore/books/CHECK_STATUS';
 
 // to initial the state to empty array
 const initialState = [];
@@ -7,7 +7,7 @@ const initialState = [];
 // actions
 
 export const checkStatusAction = () => ({
-  type: checkStatus,
+  type: CHECK_STATUS,
 });
 
 // to add reducer

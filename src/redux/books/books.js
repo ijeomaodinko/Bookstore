@@ -1,15 +1,14 @@
 // to add action types
-const addBook = 'add_book';
-const removeBook = 'remove_book';
+const ADD_BOOK = 'bookstore/books/ADD_BOOK';
+const REMOVE_BOOK = 'bookstore/books/REMOVE_BOOK';
 
 // to initial the state array
-
-const initialState = [];
+const initialState = []
 
 // actions
 
 export const addBookAction = (id, title, author) => ({
-  type: addBook,
+  type: ADD_BOOK,
   payload: {
     id,
     title,
@@ -18,7 +17,7 @@ export const addBookAction = (id, title, author) => ({
 });
 
 export const removeBookAction = (id) => ({
-  type: removeBook,
+  type: REMOVE_BOOK,
   payload: id,
 });
 
@@ -29,9 +28,9 @@ const bookReducer = (state = initialState, action) => {
       return [
         ...state,
         {
-          id: action.id,
-          title: action.title,
-          author: action.author,
+          id: action.payload.id,
+          title: action.payload.title,
+          author: action.payload.author,
         },
       ];
 
