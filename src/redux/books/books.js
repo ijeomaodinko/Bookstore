@@ -1,21 +1,23 @@
 // to add action types
+import { v4 as uuidv4 } from 'uuid';
+
 const ADD_BOOK = 'bookstore/books/ADD_BOOK';
 const REMOVE_BOOK = 'bookstore/books/REMOVE_BOOK';
 
 // to initial the state array
 const initialState = [
   {
-    id: 1,
+    id: uuidv4(),
     title: 'Piercing the Darkness',
     author: 'Frank E. Peretti',
   },
   {
-    id: 2,
+    id: uuidv4(),
     title: 'Experiencing God',
     author: 'Henry T Blackaby',
   },
   {
-    id: 3,
+    id: uuidv4(),
     title: 'Ell Miraclous',
     author: 'Eric Welson',
   },
@@ -37,18 +39,6 @@ export const removeBookAction = (id) => ({
 
 // the reducers
 const bookReducer = (state = initialState, action) => {
-  const remove = (sourceList, value) => {
-    const index = sourceList.indexOf(value);
-    if (index >= 0 && index < sourceList.length) {
-      return [
-        ...sourceList.slice(0, index),
-        ...sourceList.slice(index + 1),
-      ];
-    }
-    return sourceList;
-  };
-  const { value } = action;
-
   switch (action.type) {
     case ADD_BOOK:
       return [
@@ -59,7 +49,7 @@ const bookReducer = (state = initialState, action) => {
           author: action.author,
         }];
     case REMOVE_BOOK:
-      return remove(state, state.filter((book) => book.id === value)[0]);
+      return state.filter((book) => book.id !== action.id);
     default:
       return state;
   }
