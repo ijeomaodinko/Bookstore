@@ -4,10 +4,14 @@ import PropTypes from 'prop-types';
 import { removeBookAction } from '../redux/books/books';
 
 const BookList = (props) => {
-  const { id, title, author } = props;
+  const { title, author } = props;
   const dispatch = useDispatch();
 
-  const clickHandle = () => dispatch(removeBookAction(id));
+  const clickHandle = (e) => {
+    e.preventDefault();
+    dispatch(removeBookAction(title));
+  };
+
   return (
     <div>
       <h2>{title}</h2>
@@ -18,7 +22,7 @@ const BookList = (props) => {
 };
 
 BookList.propTypes = {
-  id: PropTypes.string.isRequired,
+  // id: PropTypes.strings.isRequired,
   title: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
 };
