@@ -2,22 +2,24 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 
 import React from 'react';
+import { useDispatch } from 'react-redux';
+import { checkStatusAction } from '../../redux/categories/categories';
 import '../Categories.css';
 
-const Categories = () => (
-  <div>
-    <form action="#">
-      <label htmlFor="category">Choose a category:</label>
-      <select name="category" id="category" className="category">
-        <option value="fiction">fiction</option>
-        <option value="Epic">Epic</option>
-        <option value="Motivational">Motivational</option>
-      </select>
-      <button type="submit">
-        check status
-      </button>
-    </form>
-  </div>
-);
+const Categories = () => {
+  // const state = useSelector((state) => state.statusReducer);
+  const dispatch = useDispatch();
+
+  const clickSubmit = () => {
+    dispatch(checkStatusAction());
+  };
+
+  return (
+    <div>
+      {/* <p>{state}</p> */}
+      <button type="button" onClick={clickSubmit}>Check Status</button>
+    </div>
+  );
+};
 
 export default Categories;
