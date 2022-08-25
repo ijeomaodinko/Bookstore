@@ -1,29 +1,29 @@
 // to add action types
-import { v4 as uuidv4 } from 'uuid';
 
 const ADD_BOOK = 'bookstore/books/ADD_BOOK';
 const REMOVE_BOOK = 'bookstore/books/REMOVE_BOOK';
 
 // to initial the state array
+
 const initialState = [
   {
+    id: 1,
     title: 'Piercing the Darkness',
     author: 'Frank E. Peretti',
-    id: uuidv4(),
   },
   {
+    id: 2,
     title: 'Experiencing God',
     author: 'Henry T Blackaby',
-    id: uuidv4(),
   },
   {
+    id: 3,
     title: 'Ell Miraclous',
     author: 'Eric Welson',
-    id: uuidv4(),
   },
 ];
 
-// actions
+// actions creators
 
 export const addBookAction = (id, title, author) => ({
   type: ADD_BOOK,
@@ -32,9 +32,9 @@ export const addBookAction = (id, title, author) => ({
   id,
 });
 
-export const removeBookAction = (title) => ({
+export const removeBookAction = (id) => ({
   type: REMOVE_BOOK,
-  title,
+  id,
 });
 
 // the reducers
@@ -49,7 +49,7 @@ const bookReducer = (state = initialState, action) => {
           id: action.id,
         }];
     case REMOVE_BOOK:
-      return state.filter((book) => book.title !== action.title);
+      return state.filter((book) => book.id !== action.id);
     default:
       return state;
   }

@@ -1,30 +1,27 @@
 import React from 'react';
-import { useDispatch } from 'react-redux';
-import PropTypes from 'prop-types';
-import { removeBookAction } from '../redux/books/books';
+import { useSelector } from 'react-redux';
+import AddBook from './AddBook';
+import Book from './pages/Book';
+import './pages/Book.css';
 
-const BookList = (props) => {
-  const { title, author } = props;
-  const dispatch = useDispatch();
-
-  const clickHandle = (e) => {
-    e.preventDefault();
-    dispatch(removeBookAction(title));
-  };
-
+// to add the bok container
+const BookList = () => {
+  const books = useSelector((state) => state.bookReducer);
   return (
-    <div>
-      <h2>{title}</h2>
-      <p>{author}</p>
-      <button type="button" onClick={clickHandle}>Delete</button>
+    <div className="bookdiv">
+      <div>
+        {books.map((book) => (
+          <Book
+            key={book.id}
+            title={book.title}
+            author={book.author}
+            id={book.id}
+          />
+        ))}
+      </div>
+      <AddBook />
     </div>
   );
-};
-
-BookList.propTypes = {
-  // id: PropTypes.strings.isRequired,
-  title: PropTypes.string.isRequired,
-  author: PropTypes.string.isRequired,
 };
 
 export default BookList;

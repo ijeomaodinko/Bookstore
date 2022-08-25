@@ -2,22 +2,23 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 
 import React from 'react';
-import { useDispatch } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import { checkStatusAction } from '../../redux/categories/categories';
+
 import '../Categories.css';
 
 const Categories = () => {
-  // const state = useSelector((state) => state.statusReducer);
+  const state = useSelector((state) => state.checkStatusReducer);
   const dispatch = useDispatch();
 
-  const clickSubmit = () => {
-    dispatch(checkStatusAction());
-  };
+  // const clickSubmit = () => {
+  //   dispatch(checkStatusAction());
+  // };
 
   return (
     <div>
-      {/* <p>{state}</p> */}
-      <button type="button" onClick={clickSubmit}>Check Status</button>
+      <p>{state}</p>
+      <button type="button" onClick={() => dispatch(checkStatusAction())}>Check Status</button>
     </div>
   );
 };

@@ -4,6 +4,7 @@ import { useDispatch } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
 import { addBookAction } from '../redux/books/books';
 
+// to add book to the store
 const AddBook = () => {
   // const { bookItem } = props;
   const dispatch = useDispatch();
@@ -16,8 +17,8 @@ const AddBook = () => {
 
     if (title && author) {
       dispatch(addBookAction(id, title, author));
-      e.target.title.value = '';
-      e.target.title.value = '';
+      e.target[0].value = '';
+      e.target[1].value = '';
     }
   };
 
