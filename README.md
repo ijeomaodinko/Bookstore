@@ -2,16 +2,15 @@
 
 # Project Name
 
-This project contains codes that enables users get from and add data to the API. It shows information about movie shows. People can browse through, like and comment. The count of likes and count are registed.
+This project contains codes that enables users get from and add books to the API. It shows information about books. People can browse through, for books.
 
 
 ## Built With
 
-- HTML
+- React
 - CSS
-- Javascript
+- Redux
 - VsCode
-- Webpack
 
 ## Live Demo (if available)
 
@@ -26,11 +25,11 @@ Open your console. Run the following
 
 If you are using HTTPS
 
-    "git clone https://github.com/ijeomaodinko/CAPSTONE_2.git" 
+    "git clone https://github.com/ijeomaodinko/Bookstore.git" 
 
 If you are using a SSH key.
 
-    "git clone git@github.com:ijeomaodinko/CAPSTONE_2.git" 
+    "git clone git@github.com:ijeomaodinko/Bookstore.git" 
 
 
 Press ENTER to create your local clone. After creating it, you can open the page by opening with Visual Studio Code. 
@@ -45,37 +44,24 @@ Typing    npm run start on the terminal and  open the dist folder and click on t
 
 
 ### Installation and Setup
-Install Node Modules ithrough the terminal 
+Install Node Modules through the terminal 
 
     npm install 
 
 
 ### Build the Development Serve 
 
-    npm run build
+    npm start
 
 
-### Run Tests
 
-To run test on the test files used:
-
-    npm test 
-
-
-## Authors
+## Author
 
 👤 **Ijeoma Odinko**
 
 - GitHub: [@githubhandle](https://github.com/ijeomaodinko)
 - Twitter: [@twitterhandle](https://twitter.com/iodinko)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/ijeomaodinko)
-
-
-👤 **Vanessa Bonito**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
 
 
