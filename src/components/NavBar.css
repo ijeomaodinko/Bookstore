@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+
+.menuNav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgb(104, 103, 143);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.menuList {
+  display: flex;
+  flex-direction: row;
+  gap: 6rem;
+  margin-top: 1rem;
+  list-style: none;
+}
+
+.menui {
+  color: white;
+  font-size: x-large;
+}
+
+.menuContainer {
+  margin-top: 4rem;
+}
+
+.imgAccount {
+  background-color: grey;
+  font-size: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.menuTitle {
+  font-size: 60px;
+}

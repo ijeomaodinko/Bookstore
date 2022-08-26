@@ -1,0 +1,95 @@
+.bookSection {
+  width: 80%;
+  height: 9rem;
+  margin: 2.313rem 6.25rem 0;
+  padding: -4rem 6.188rem 1.625rem 1.688rem;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  background-color: #fff;
+}
+
+.bookContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  justify-items: center;
+}
+
+.perDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-items: center;
+}
+
+.bookTitle {
+  width: 12.313rem;
+  height: 1.813rem;
+  margin: -1rem 20.188rem 1rem 0;
+  font-family: RobotoSlab, var(--font-family-common);
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.2px;
+  color: #121212;
+}
+
+.bookAuthor {
+  width: 6.688rem;
+  height: 1.188rem;
+  margin: 2.1rem 0 0;
+  font-family: RobotoSlab, var(--font-family-common);
+  font-size: 0.875rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4386bf;
+}
+
+.buttons {
+  width: 4.563rem;
+  height: 1.188rem;
+  margin: 0.5rem 0.938rem 0.125rem 0;
+  font-family: RobotoSlab, var(--font-family-common);
+  font-size: 0.875rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4386bf;
+  border: none;
+  background-color: #fff;
+  padding: 0;
+}
+
+.remove {
+  border-left: solid 1px #e8e8e8;
+  border-right: solid 1px #e8e8e8;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.commentDiv {
+  margin-top: 1rem;
+  justify-content: space-between;
+}
+
+.showPer {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: 5px solid #0290ff;
+  color: #fff;
+  margin-right: 2.5rem;
+}
+
+.updateDiv {
+  margin-right: 2.5rem;
+  margin-left: 1rem;
+}
