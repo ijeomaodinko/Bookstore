@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Bookstore
 
 This project contains codes that enables users get from and add books to the API. It shows information about books. People can browse through, for books.
 
@@ -54,7 +54,6 @@ Install Node Modules through the terminal
     npm start
 
 
-
 ## Author
 
 👤 **Ijeoma Odinko**
@@ -62,8 +61,6 @@ Install Node Modules through the terminal
 - GitHub: [@githubhandle](https://github.com/ijeomaodinko)
 - Twitter: [@twitterhandle](https://twitter.com/iodinko)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/ijeomaodinko)
-
-
 
 ## 🤝 Contributing
 
