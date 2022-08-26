@@ -1,70 +1,104 @@
-# Getting Started with Create React App
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Project Name
 
-## Available Scripts
+This project contains codes that enables users get from and add data to the API. It shows information about movie shows. People can browse through, like and comment. The count of likes and count are registed.
 
-In the project directory, you can run:
 
-### `npm start`
+## Built With
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- HTML
+- CSS
+- Javascript
+- VsCode
+- Webpack
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Live Demo (if available)
 
-### `npm test`
+[Live Demo Link](https://livedemo.com)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+# Getting Started
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To get a local copy up and running follow these simple example steps.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Open your console. Run the following 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+If you are using HTTPS
 
-### `npm run eject`
+    "git clone https://github.com/ijeomaodinko/CAPSTONE_2.git" 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+If you are using a SSH key.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    "git clone git@github.com:ijeomaodinko/CAPSTONE_2.git" 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Press ENTER to create your local clone. After creating it, you can open the page by opening with Visual Studio Code. 
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Typing    npm run start on the terminal and  open the dist folder and click on the index.html file.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+### Prerequisites
+- A modern web browser like Chrome, Safari, Firefox, etc.
+- JavaScript enabled.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+### Installation and Setup
+Install Node Modules ithrough the terminal 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+    npm install 
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Build the Development Serve 
 
-### Advanced Configuration
+    npm run build
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+### Run Tests
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+To run test on the test files used:
 
-### `npm run build` fails to minify
+    npm test 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## Authors
+
+👤 **Ijeoma Odinko**
+
+- GitHub: [@githubhandle](https://github.com/ijeomaodinko)
+- Twitter: [@twitterhandle](https://twitter.com/iodinko)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/ijeomaodinko)
+
+
+👤 **Vanessa Bonito**
+
+- GitHub: [@githubhandle](https://github.com/githubhandle)
+- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+
+
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+
+## Acknowledgments
+
+- Hat tip to anyone whose code was used
+- Inspiration
+- etc
+
+## 📝 License
+
+This project is [MIT](./LICENSE) licensed.
+
+_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
