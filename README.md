@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Bookstore
 
 This project contains codes that enables users get from and add books to the API. It shows information about books. People can browse through, see books.
 
