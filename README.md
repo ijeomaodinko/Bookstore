@@ -54,6 +54,7 @@ Install Node Modules through the terminal
     npm start
 
 
+
 ## Author
 
 👤 **Ijeoma Odinko**
@@ -61,7 +62,6 @@ Install Node Modules through the terminal
 - GitHub: [@githubhandle](https://github.com/ijeomaodinko)
 - Twitter: [@twitterhandle](https://twitter.com/iodinko)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/ijeomaodinko)
-
 
 ## 🤝 Contributing
 
