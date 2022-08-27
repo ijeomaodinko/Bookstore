@@ -125,7 +125,7 @@
 
 .perCompleted {
   font-size: 2rem;
-  font-family: RobotoSlab var(--font-family-common);
+  font-family: RobotoSlab, var(--font-family-common);
   font-weight: 300;
   font-stretch: normal;
   font-style: normal;
@@ -140,7 +140,7 @@ body {
 }
 
 .currentChapter {
-  font-family: Montserrat var(--font-family-common);
+  font-family: Montserrat, var(--font-family-common);
   font-size: 0.875rem;
   font-weight: normal;
   font-stretch: normal;
@@ -152,7 +152,7 @@ body {
 }
 
 .currentCha {
-  font-family: Montserrat var(--font-family-common);
+  font-family: Montserrat, var(--font-family-common);
   font-size: 0.813rem;
   font-weight: normal;
   font-stretch: normal;
@@ -163,7 +163,7 @@ body {
 }
 
 .updateProgram {
-  font-family: Montserrat var(--font-family-common);
+  font-family: Montserrat, var(--font-family-common);
   font-size: 0.875rem;
   font-weight: normal;
   font-stretch: normal;
