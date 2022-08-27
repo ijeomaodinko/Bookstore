@@ -1,8 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Bookstore
 
-This project contains codes that enables users get from and add books to the API. It shows information about books. People can browse through, for books.
+This project contains codes that enables users get from and add books to the API. It shows information about books. People can browse through, see books.
 
 
 ## Built With
@@ -62,8 +62,6 @@ Install Node Modules through the terminal
 - GitHub: [@githubhandle](https://github.com/ijeomaodinko)
 - Twitter: [@twitterhandle](https://twitter.com/iodinko)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/ijeomaodinko)
-
-
 
 ## 🤝 Contributing
 
