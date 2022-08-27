@@ -26,6 +26,7 @@
   justify-items: center;
   border-right: 1px solid #c7c7c7;
   height: 69px;
+  padding-right: 2.9rem;
 }
 
 .bookTitle {
@@ -104,7 +105,7 @@
 }
 
 .updateDiv {
-  margin-right: 1rem;
+  margin-right: 2.9rem;
   margin-left: 1rem;
   align-items: center;
   justify-content: center;
@@ -124,7 +125,7 @@
 }
 
 .perCompleted {
-  font-size: 2rem;
+  font-size: 1rem;
   font-family: RobotoSlab, var(--font-family-common);
   font-weight: 300;
   font-stretch: normal;

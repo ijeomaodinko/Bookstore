@@ -11,8 +11,8 @@ const NavBar = () => (
     </h1>
     <div className="menuContainer">
       <ul className="menuList">
-        <li><Link className="menui book vertical" to="/">Books</Link></li>
-        <li><Link className="menui categories vertical" to="/Categories">Categories</Link></li>
+        <li><Link className="menui book vertical" to="/">BOOKS</Link></li>
+        <li><Link className="menui categories vertical" to="/Categories">CATEGORIES</Link></li>
       </ul>
     </div>
     {/* <div className="imgAccount"><FaUser fa-lg /></div> */}
