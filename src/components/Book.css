@@ -1,11 +1,13 @@
 .bookSection {
-  width: 80%;
+  width: 79%;
   height: 9rem;
-  margin: 2.313rem 6.25rem 0;
-  padding: -4rem 6.188rem 1.625rem 1.688rem;
-  border-radius: 4px;
+  padding: -4rem 6.17rem 1.625rem 6.25rem;
+  border-radius: 6px;
   border: solid 1px #e8e8e8;
   background-color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
 }
 
 .bookContainer {
@@ -14,6 +16,7 @@
   justify-content: space-between;
   align-items: center;
   justify-items: center;
+  margin-left: 1rem;
 }
 
 .perDiv {
@@ -21,14 +24,16 @@
   justify-content: space-between;
   align-items: center;
   justify-items: center;
+  border-right: 1px solid #c7c7c7;
+  height: 69px;
 }
 
 .bookTitle {
   width: 12.313rem;
   height: 1.813rem;
-  margin: -1rem 20.188rem 1rem 0;
+  margin: -0.7rem 20.188rem 0 0;
   font-family: RobotoSlab, var(--font-family-common);
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
@@ -37,10 +42,15 @@
   color: #121212;
 }
 
+.bookCategory {
+  font-size: 1rem;
+  color: #888;
+}
+
 .bookAuthor {
   width: 6.688rem;
   height: 1.188rem;
-  margin: 2.1rem 0 0;
+  margin: 0.2rem 0  0 0;
   font-family: RobotoSlab, var(--font-family-common);
   font-size: 0.875rem;
   font-weight: 300;
@@ -51,10 +61,10 @@
   color: #4386bf;
 }
 
-.buttons {
+.button {
   width: 4.563rem;
   height: 1.188rem;
-  margin: 0.5rem 0.938rem 0.125rem 0;
+  margin: 0 0.938rem 1rem 0;
   font-family: RobotoSlab, var(--font-family-common);
   font-size: 0.875rem;
   font-weight: 300;
@@ -66,13 +76,15 @@
   border: none;
   background-color: #fff;
   padding: 0;
+  margin-left: -0.4rem;
 }
 
 .remove {
   border-left: solid 1px #e8e8e8;
   border-right: solid 1px #e8e8e8;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin-left: 0.7rem;
+  margin-right: 0.7rem;
+  width: 90px;
 }
 
 .commentDiv {
@@ -85,11 +97,85 @@
   height: 4rem;
   border-radius: 50%;
   border: 5px solid #0290ff;
-  color: #fff;
-  margin-right: 2.5rem;
+  color: white;
+  margin-right: 1.7rem;
+  margin-left: -9rem;
+  margin-top: 2rem;
 }
 
 .updateDiv {
-  margin-right: 2.5rem;
+  margin-right: 1rem;
   margin-left: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.percent {
+  font-family: Montserrat, var(--font-family-common);
+  font-size: 2rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.4px;
+  color: #121212;
+  margin-top: 1.1rem;
+  padding-right: 3.9rem;
+}
+
+.perCompleted {
+  font-size: 2rem;
+  font-family: RobotoSlab var(--font-family-common);
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.4px;
+  color: #888;
+  margin-top: -1.6rem;
+}
+
+body {
+  background-color: #f5f6fa;
+}
+
+.currentChapter {
+  font-family: Montserrat var(--font-family-common);
+  font-size: 0.875rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #888;
+  margin-bottom: -0.7rem;
+}
+
+.currentCha {
+  font-family: Montserrat var(--font-family-common);
+  font-size: 0.813rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.9px;
+  color: #121212;
+}
+
+.updateProgram {
+  font-family: Montserrat var(--font-family-common);
+  font-size: 0.875rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #f5f6fa;
+  background-color: #0290ff;
+  width: 12rem;
+  height: 2.1rem;
+  border: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.19rem;
 }

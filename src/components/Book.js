@@ -42,12 +42,12 @@ const Book = () => {
             <p className="showPer">O</p>
             <div className="per">
               <h2 className="percent">64%</h2>
-              <h3 className="perCompleted">completed</h3>
+              <h3 className="perCompleted">Completed</h3>
             </div>
           </div>
           <div className="updateDiv">
             <h2 className="currentChapter">CURRENT CHAPTER</h2>
-            <h3 className="curentCha">Chapter 17</h3>
+            <h3 className="currentCha">Chapter 17</h3>
             <button className="updateProgram" type="button">UPDATE PROGRESS</button>
           </div>
         </div>
