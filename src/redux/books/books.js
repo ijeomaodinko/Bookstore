@@ -1,40 +1,54 @@
 // to add action types
+
 const ADD_BOOK = 'bookstore/books/ADD_BOOK';
 const REMOVE_BOOK = 'bookstore/books/REMOVE_BOOK';
 
 // to initial the state array
-const initialState = [];
 
-// actions
+const initialState = [
+  {
+    id: 1,
+    title: 'Piercing the Darkness',
+    author: 'Frank E. Peretti',
+  },
+  {
+    id: 2,
+    title: 'Experiencing God',
+    author: 'Henry T Blackaby',
+  },
+  {
+    id: 3,
+    title: 'Ell Miraclous',
+    author: 'Eric Welson',
+  },
+];
+
+// actions creators
 
 export const addBookAction = (id, title, author) => ({
   type: ADD_BOOK,
-  payload: {
-    id,
-    title,
-    author,
-  },
+  title,
+  author,
+  id,
 });
 
 export const removeBookAction = (id) => ({
   type: REMOVE_BOOK,
-  payload: id,
+  id,
 });
 
 // the reducers
 const bookReducer = (state = initialState, action) => {
   switch (action.type) {
-    case 'addBook':
+    case ADD_BOOK:
       return [
         ...state,
         {
-          id: action.payload.id,
-          title: action.payload.title,
-          author: action.payload.author,
-        },
-      ];
-
-    case 'removeBook':
+          title: action.title,
+          author: action.author,
+          id: action.id,
+        }];
+    case REMOVE_BOOK:
       return state.filter((book) => book.id !== action.id);
     default:
       return state;

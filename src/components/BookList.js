@@ -1,19 +1,27 @@
-import PropTypes from 'prop-types';
+import React from 'react';
+import { useSelector } from 'react-redux';
+import AddBook from './AddBook';
+import Book from './pages/Book';
+import './pages/Book.css';
 
-const BookList = (props) => {
-  const { title, author } = props;
-
+// to add the bok container
+const BookList = () => {
+  const books = useSelector((state) => state.bookReducer);
   return (
-    <li>
-      <h2>{title}</h2>
-      <p>{author}</p>
-    </li>
+    <div className="bookdiv">
+      <div>
+        {books.map((book) => (
+          <Book
+            key={book.id}
+            title={book.title}
+            author={book.author}
+            id={book.id}
+          />
+        ))}
+      </div>
+      <AddBook />
+    </div>
   );
-};
-
-BookList.propTypes = {
-  title: PropTypes.string.isRequired,
-  author: PropTypes.string.isRequired,
 };
 
 export default BookList;
