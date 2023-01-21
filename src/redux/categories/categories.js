@@ -1,12 +1,11 @@
-// action type
+// action types
 const CHECK_STATUS = 'bookstore/books/CHECK_STATUS';
 
-// to initial the state to empty array
+// to add initial state
 const initialState = [];
 
-// actions
-
-export const checkStatusAction = () => ({
+// to add action
+export const checkStatus = () => ({
   type: CHECK_STATUS,
 });
 
@@ -14,7 +13,7 @@ export const checkStatusAction = () => ({
 const checkStatusReducer = (state = initialState, action) => {
   switch (action.type) {
     case CHECK_STATUS:
-      return 'Under Constructon';
+      return 'Under construction';
     default:
       return state;
   }
