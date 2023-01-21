@@ -2,7 +2,7 @@
 
 # Bookstore
 
-This project contains codes that enables users get from and add books to the API. It shows information about books. People can browse through, for books.
+This project contains codes that enables users get from and add books to the API. It shows information about books. People can browse through, see books.
 
 
 ## Built With

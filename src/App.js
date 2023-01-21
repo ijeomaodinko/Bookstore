@@ -7,11 +7,13 @@ import NavBar from './components/NavBar';
 function App() {
   return (
     <>
-      <NavBar />
-      <Routes>
-        <Route path="/" element={<BookList />} />
-        <Route path="/Categories" element={<Categories />} />
-      </Routes>
+      <div>
+        <NavBar />
+        <Routes>
+          <Route path="/" element={<BookList />} />
+          <Route path="/categories" element={<Categories />} />
+        </Routes>
+      </div>
     </>
 
   );

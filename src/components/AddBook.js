@@ -1,4 +1,4 @@
-import './Book.css';
+import './AddBook.css';
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { addBookThunk } from '../redux/books/books';
@@ -30,7 +30,7 @@ const AddBook = () => {
   return (
     <div className="FormDiv">
       <header className="title">
-        <h3>ADD NEW BOOK</h3>
+        <h3 className="titleInput">ADD NEW BOOK</h3>
       </header>
       <form className="form">
         <input className="inputs" onInput={clickHandle} type="text" name="title" placeholder="Book-title" />

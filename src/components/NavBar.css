@@ -1,42 +1,65 @@
-* {
-  box-sizing: border-box;
-}
-
 .menuNav {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  background-color: rgb(104, 103, 143);
-  width: 100%;
+  justify-items: center;
+  align-items: center;
+  justify-content: flex-start;
+  width: 70%;
+  height: 5.938rem;
+  background-color: #fff;
   margin-left: auto;
   margin-right: auto;
-  border-bottom-left-radius: 50px;
-  border-bottom-right-radius: 50px;
+  padding-left: 6.17rem;
+  padding-right: 6.25rem;
+  margin-top: 1rem;
+  border-bottom: #e8e8e8 solid;
+}
+
+.menuTitle {
+  width: 15rem;
+  height: 2.313rem;
+  margin: 0.375rem 2.938rem 0.125rem 0;
+  font-family: Montserrat, var(--font-family-common);
+  font-size: 1.85rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #0290ff;
+}
+
+.menuContainer {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
 }
 
 .menuList {
   display: flex;
-  flex-direction: row;
-  gap: 6rem;
-  margin-top: 1rem;
   list-style: none;
+  text-decoration: none;
+  flex-direction: row;
 }
 
 .menui {
-  color: white;
-  font-size: x-large;
+  width: 3.688rem;
+  height: 1rem;
+  margin: 1.125rem 2.563rem 0.688rem 0;
+  font-size: 1rem;
+  font-family: Montserrat, var(--font-family-common);
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.9px;
+  text-decoration: none;
 }
 
-.menuContainer {
-  margin-top: 4rem;
+.book {
+  color: #121212;
 }
 
-.imgAccount {
-  background-color: grey;
-  font-size: 50px;
-  border-bottom-right-radius: 50px;
-}
-
-.menuTitle {
-  font-size: 60px;
+.categories {
+  color: #807b7b;
 }
