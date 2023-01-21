@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { addBookThunk } from '../redux/books/books';
 
+// to add book to the store
 const AddBook = () => {
   const dispatch = useDispatch();
   const [bookInfo, setBookInfo] = useState({ title: '', author: '', category: '' });
@@ -19,6 +20,11 @@ const AddBook = () => {
       ...bookInfo,
       [e.target.name]: e.target.value,
     });
+    // if (title && author) {
+    //   dispatch(addBookAction(id, title, author));
+    //   e.target[0].value = '';
+    //   e.target[1].value = '';
+    // }
   };
 
   return (
