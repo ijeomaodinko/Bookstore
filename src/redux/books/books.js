@@ -1,8 +1,7 @@
 import axios from 'axios';
 import uuid from 'react-uuid';
-import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
+import { createAsyncThunk, createSlice } from '@reduxjs/toolkit'; // eslint-disable-line no-console
 
-/* eslint-disable no-console */
 // to add action types
 const ADD_BOOK = 'bookstore/books/ADD_BOOK';
 const REMOVE_BOOK = 'bookstore/books/REMOVE_BOOK';

@@ -1,9 +1,7 @@
 // action types
 const CHECK_STATUS = 'bookstore/books/CHECK_STATUS';
-
 // to add initial state
 const initialState = [];
-
 // to add action
 export const checkStatus = () => ({
   type: CHECK_STATUS,
