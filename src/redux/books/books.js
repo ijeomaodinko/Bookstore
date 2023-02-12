@@ -39,7 +39,7 @@ export const addBookThunk = createAsyncThunk(
   },
 );
 
-// the remove book book action asynchronous
+// the remove book action asynchronous
 export const removeBookThunk = createAsyncThunk(REMOVE_BOOK, async (bookId, thunkAPI) => {
   await axios.delete(`${apiUrl}${bookId}`)
     .then(() => { thunkAPI.dispatch(getBookThunk()); })

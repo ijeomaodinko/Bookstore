@@ -8,6 +8,7 @@ const Book = () => {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getBookThunk());
+    // eslint-disable-next-line
   }, []);
 
   // to add event to the remove

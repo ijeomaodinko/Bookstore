@@ -1,7 +1,7 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
-import { removeBookAction } from '../../redux/books/books';
+import { removeBookThunk } from '../../redux/books/books';
 
 // To remove book from the booklist
 const Book = (props) => {
@@ -12,7 +12,7 @@ const Book = (props) => {
   const dispatch = useDispatch();
 
   const clickHandle = () => {
-    dispatch(removeBookAction(id));
+    dispatch(removeBookThunk(id));
   };
 
   return (
